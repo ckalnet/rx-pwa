@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './pages/Home';
 import NewRx from './pages/NewRx';
 
+import './App.css';
+
 
 function App() {
   return (

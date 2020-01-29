@@ -5,7 +5,24 @@ import { Link } from "react-router-dom";
 export default function NewRx() {
     return (
         <div>
-            <Link to="/">Home</Link>
+            <header>
+            <nav className="navbar navbar-expand-md fixed-top bg-dark">
+          <form className="w-100 pt-2 pb-0">
+            <div className="form-group row d-flex align-items-center">
+              <div className="col-3">
+                <Link to="/" ><span className="oi oi-chevron-left" /></Link>
+              </div>
+              <div className="col-6">
+                <h1 className="mb-0 text-center" style={{fontSize: '1.25rem', color: '#fff'}}>Daniel Casey</h1>
+              </div>
+              <div className="col-3 text-right">
+                <span className="oi oi-ellipses" style={{fontSize: '1.25rem', color: '#fff'}} />
+              </div>
+            </div>
+          </form>
+        </nav>
+      </header>
+            
 
             <div className="container">
             <form>
@@ -37,8 +54,13 @@ export default function NewRx() {
           <label htmlFor="exampleFormControlTextarea1">Example textarea</label>
           <textarea className="form-control" id="exampleFormControlTextarea1" rows={3} defaultValue={""} />
         </div>
+
+        <div className="form-group">
+          <button className="btn btn-primary">Submit Rx</button>
+        </div>
       </form>
             </div>
+
         </div>
     )
 }
