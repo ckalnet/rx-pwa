@@ -10,7 +10,7 @@ export default function NewRx() {
           <form className="w-100 pt-2 pb-0">
             <div className="form-group row d-flex align-items-center">
               <div className="col-3">
-                <Link to="/" >⇦</Link>
+                <Link to="/" className="btnLink">⇦</Link>
               </div>
               <div className="col-6">
                 <h1 className="mb-0 text-center" style={{fontSize: '1.25rem', color: '#fff'}}>Daniel Casey</h1>
